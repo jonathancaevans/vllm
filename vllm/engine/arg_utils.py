@@ -204,6 +204,9 @@ class EngineArgs:
         if not self.tokenizer:
             self.tokenizer = self.model
 
+        self.kv_cache_dtype = 'fp8'
+        self.swap_space = 
+
         # Override the default value of enable_prefix_caching if it's not set
         # by user.
         if self.enable_prefix_caching is None:
