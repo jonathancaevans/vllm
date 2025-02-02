@@ -205,7 +205,7 @@ class EngineArgs:
             self.tokenizer = self.model
 
         self.kv_cache_dtype = 'fp8'
-        self.swap_space = 
+        self.swap_space = 64
 
         # Override the default value of enable_prefix_caching if it's not set
         # by user.
